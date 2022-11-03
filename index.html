@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML - CSS Documentation</h1>
+        </header>
+        <h2><a  href="#html">HTML Section</a></h2>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Definition">Definition</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Anatomy_of_HTML_Elements">Anatomy of HTML Elements</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Attributes">Attributes</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#HTML_Comments">HTML Comments</a>
+            </li>
+        </ul>
+        <h2><a  href="#css"> CSS Section</a></h2>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Definition">Definition</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#CSS_Modules">CSS Modules</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+<!-- HTML -->
+        <h1 id="html">HTML Documentation</h1>
+        <section class="main-section" id="Definition">
+            <header id="definition">Definition</header>
+            <article>
+                <p>HTML is the language with which the content of web pages is defined. Basically it is a set of tags used to define the text and other elements that make up a web page, such as images, lists, videos, etc.</p>
+                <p>HTML was originally created for the purpose of disseminating information with text and some images. However, despite this poor planning, if modifications have been incorporated over time, these are the HTML standards. Numerous standards have already been presented. HTML 4.01 is the latest standard as of February 2001.</p>
+                <p>HTML is an element markup language for creating hypertext documents, very easy to learn, which allows anyone, even if they have not programmed in life, to be able to deal with to the task of creating a website.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_HTML_Elements">
+            <header id="anatomy_of_HTML_elements">Anatomy of HTML Elements</header>
+            <article>
+                <p>The anatomy of any element in HTML is:</p>
+                <ul>
+                    <li><b>The opening tag:</b> This consists of the name of the element, wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect.</li>
+                    <li><b>The content:</b> This is the content of the element.</li>
+                    <li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+                </ul>
+                <h3>Nesting Elements</h3>
+                <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a <b>strong</b> element, which means that the word is to have strong(er) text formatting:</p>
+                <pre><code>
+                    <u><p><span><</span>p>My cat is <span><</span>strong> very<span><</span>/strong> grumpy.<span><</span>/p></u>
+                    <p>My cat is <strong>very</strong> grumpy.</p>
+                </code></pre>
+            </article>
+        </section>
+        <section class="main-section" id="Attributes">
+            <header id="attributes">Attributes</header>
+            <article>
+                <p>Attributes contain extra information about the element that won't appear in the content.</p>
+                <p>An attribute should have:</p>
+                <ul>
+                    <li>
+                        A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
+                    </li>
+                    <li>
+                        The attribute name, followed by an equal sign.
+                    </li>
+                    <li>
+                        An attribute value, wrapped with opening and closing quote marks.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="HTML_Comments">
+            <header id="html_comments">HTML Comments</header>
+            <article>
+                <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.</p>
+                <p>To write an HTML comment, wrap it in the special markers <b><span><</span>!-- and --></b>. For example:</p>
+                <pre><code>
+                <u><p><span><</span>p>I'm not inside a comment<span></span><</span>/p></p></u>
+
+                <u><p><span><</span>!-- <span><</span>p>I am!<span><</span>/p> --></p></u>
+                </code></pre>
+            </article>
+        </section>
+<!-- CSS -->
+        <h1 id="css">CSS Documentation</h1>
+        <section class="main-section" id="Definition">
+            <header id="definition">Definition</header>
+            <article>
+                <p>CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+                <p>A document is usually a text file structured using a markup language — <b>HTML</b> is the most common markup language, but you may also come across other markup languages such as SVG or XML.</p>
+                <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge, are designed to present documents visually, for example, on a computer screen, projector, or printer.</p>
+                <p>CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout</p>
+            </article>
+        </section>
+        <section class="main-section" id="CSS_Syntax">
+            <header id="css_syntax">CSS Syntax</header>
+            <article>
+                <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.</p>
+                <p>For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+                <pre><code>
+                    <b><span class="code1"> h1 {</span></b> <br>
+                        <b><span class="code2"> color: red;</span></b> <br>
+                        <b><span class="code2"> font-size: 5em;</span></b><br>
+                     <b><span class="code1">}</span></b>
+                </code></pre>
+                <ul>
+                    <li>
+                        In the above example, the CSS rule opens with a <u>selector</u>. This selects the HTML element that we are going to style. In this case, we are styling level one headings (<b><span><</span>h1></b>).
+                    </li>
+                    <li>
+                        We then have a set of curly braces <b> <code>{ }</code> </b>.
+                    </li>
+                    <li>
+                        Inside the braces will be one or more declarations, which take the form of property and value pairs. We specify the property (<b>color</b> in the above example) before the colon, and we specify the value of the property after the colon (<b> red </b> in this example).
+                    </li>
+                    <li>This example contains two declarations, one for <b><code> color </code></b>and the other for <b><code>font-size</code></b>. Each pair specifies a property of the element(s) we are selecting (<b> <span> <</span>h1> </b> in this case), then a value that we'd like to give the property.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="CSS_Modules">
+            <header id="css_modules">CSS Modules</header>
+            <article>
+                <p>As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference to these modules as you explore MDN. Many of the documentation pages are organized around a particular module. For example, you could take a look at the MDN reference to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders"> Backgrounds and Borders </a> module to find out what its purpose is and the properties and features it contains. In that module, you will also find a link to Specifications that defines the technology (also see the section below).</p>
+                <p>At this stage, you don't need to worry too much about how CSS is structured; however, it can make it easier to find information if, for example, you are aware that a certain property is likely to be found among other similar things, and is therefore, probably in the same specification.</p>
+                <p>For a specific example, let's go back to the Backgrounds and Borders module — you might think that it makes logical sense for the <b> background-color </b>and <b>border-color</b> properties to be defined in this module. And you'd be right.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

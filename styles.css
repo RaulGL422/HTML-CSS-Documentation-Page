@@ -1,0 +1,131 @@
+nav {
+    display: block;
+}
+
+* {
+    scroll-behavior:smooth;
+}
+
+#navbar {
+    background-color: aliceblue;
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        overflow-x: hidden;
+        border-bottom: solid 2px black;
+    }
+
+    #main-doc {
+        margin-top: 290px;
+        margin-left: 0px;
+        position: relative;
+    }
+
+}
+
+a {
+    text-decoration: none;   
+    color: black;
+}
+
+nav header {
+    text-align: center;
+    margin: 10px;
+    font-size: 19px;
+}
+
+body {
+    background-color:whitesmoke;
+}
+
+nav h2 {
+    text-align: center;
+    padding-top: 10px;
+    border-top: solid 2px black;
+    font-weight: bold;
+}
+
+nav h2:hover {
+    cursor: pointer;
+}
+
+nav > ul > li {
+    padding: 10px;
+    list-style-type: none;
+    border-top: solid 1px black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: list-item;
+    margin-left: -40px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+nav > ul {
+    margin-bottom: -10px;
+}
+
+main {
+    display: block;
+    position: absolute;
+    margin-left: 300px;
+}
+
+main h1 {
+    margin-left: 50px;
+}
+
+main header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+main p {
+    margin-left: 70px;
+    margin-right: 40px;
+}
+
+main ul > li, main p {
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main ul > li {
+    margin-left: 70px;
+    padding-bottom: 10px;
+}
+
+main h3 {
+    margin-left: 60px;
+}
+
+
+pre {
+    background-color: darkslategrey;
+    border-radius: 7px;
+    color: white;
+    margin-left: 10%;
+    width: 70%;
+}
+
+section a {
+    color: blue;
+}
